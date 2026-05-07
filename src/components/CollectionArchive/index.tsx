@@ -9,7 +9,7 @@ export type Props = {
 }
 
 export const CollectionArchive: React.FC<Props> = (props) => {
-  const { items, relationTo } = props // ✅ đúng
+  const { items, relationTo } = props
 
   if (!items || items.length === 0) return null
 
@@ -24,7 +24,7 @@ export const CollectionArchive: React.FC<Props> = (props) => {
               <Card
                 className="h-full"
                 doc={result}
-                relationTo={relationTo} // ✅ đúng
+                relationTo={relationTo} 
                 showCategories
               />
             </div>
